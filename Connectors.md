@@ -1,0 +1,17 @@
+---
+connectors : 
+- System CEC :
+  - C2V : ","
+  - VR : "-"
+  - V2V : "."
+  - C2C : ";"
+  - CR : "-"
+- System LUEUR :
+  - C2V : 
+    - ":"
+    - "."
+  - VR : "-"
+  - V2V : ","
+  - C2C : ","
+  - CR : "-"
+---

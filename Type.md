@@ -1,0 +1,25 @@
+---
+type :
+- BOOK_BLOCK :
+  - [BOOK, B2C, CHAPTER_RANGE]
+  - [BOOK, B2C, CHAPTER_BLOCKS]
+- CHAPTER_RANGE :
+	- [CHAPTER_SIMPLE, CR, CHAPTER_SIMPLE]
+- CHAPTER_SIMPLE :
+	- [CHAPTER, C2V, VERSE]
+- CHAPTER_BLOCKS :
+	- CHAPTER_BLOCK
+	- CHAPTER_BLOCK, C2C, CHAPTER_BLOCK
+	- CHAPTER_RANGE
+- CHAPTER_BLOCK :
+	- CHAPTER
+	- CHAPTER, C2V, VERSE
+---
+
+https://regex101.com/r/hi1EuM/1
+
+https://regex101.com/r/hi1EuM/15
+
+https://regex101.com/r/ki1LES/1
+
+https://regex101.com/r/ldozGv/5
