@@ -1,11 +1,7 @@
----
-bibleName : AELF
----
 
 <%* 
 
-let bibleName = tp.frontmatter.bibleName;
-console.log(bibleName);
+let bibleName = "AELF";
 
 let regexBible = new RegExp(`Bible\/${bibleName}\/${bibleName}.md$`);
 
@@ -36,10 +32,8 @@ if (verseInit == undefined || verseInit == null) {
 	return;
 } else if (verseInit == verseEnd) {
 	return "[["+book.basename+"#"+verseInit+"]] ";
-} else if (Number(verseInit.replace(/[a-zA-Z]/,'')) <= 5) {
-	return "[["+book.basename+"]],"+verseInit+"-"+verseEnd+" ";
 } else {
-	return "[["+book.basename+"#"+verseInit+"]]"+"-"+verseEnd+" ";
+	return "[["+book.basename+"#"+verseInit+"#"+verseEnd+"]] ";
 }
 
 %>
