@@ -1,0 +1,1 @@
+<% tp.user.shell( {COMMAND: "cd Tests/DevoirLongISTA/Compilation/Scriptcompiler.sh"} ) %>
